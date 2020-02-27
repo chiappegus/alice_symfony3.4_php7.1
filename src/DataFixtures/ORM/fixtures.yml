@@ -1,0 +1,6 @@
+App\Entity\Buffy:
+  #buffy_{1..20}:
+  buffy_{1..1000}:
+    name: <name()>
+    quote: <buffyQuote()>
+    #quote: <text()>
