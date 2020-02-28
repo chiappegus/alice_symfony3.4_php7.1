@@ -7,3 +7,8 @@ App\Entity\Buffy:
     name: <gustavoNombreslatinos()>
     quote: <buffyQuote()>
     #quote: <text()>
+
+App\Entity\ComidaPreferidad:
+  #buffy_{1..20}:
+  ComidaPreferidad_{1..10}:
+    nombre: <gustavoPComidas()>

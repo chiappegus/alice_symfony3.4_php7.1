@@ -48,6 +48,39 @@ class BuffyProvider extends BaseProvider
        
     }
 
+#https://listas.20minutos.es/lista/las-comidas-mas-populares-y-sencillas-del-mundo-por-paises-425492/
+    public function gustavoPComidas()
+    {    $Seleccion = array_rand($sexo=["TORTILLA DE PATATAS",
+        "PIZZA(Italia)",
+        "HUEVOS FRITOS CON CHORIZO(España)",
+        "BOCATA DE CALAMARES(España)",
+        "SPAGUETTI CARBONARA (Italia)",
+        "SÁNDWICH(Inglaterra)",
+        "SAN JACOBO (Suiza)",
+        "TARTA SACHER (Austria)",
+        "SUSHI (Japón)",
+        "ROLLITOS DE PRIMAVERA (China)",
+        "MOUSSAKA (Grecia)",
+        "LA FONDUE (Suiza)",
+        "SARDINHAS ASSADAS (Portugal)",
+        "CREPES (Francia)",
+        "FALAFEL (Egipto)",
+        "FISH AND CHIPS (Inglaterra)",
+        "CHORIPÁN (Argentina)",
+        "CEVICHE DE CAMARÓN (Ecuador)",
+        "AREPAS (Colombia)"
+
+        ]);
+     
+            return $sexo[$Seleccion];
+        
+       
+    }
+
+
+
+    
+
     
 
 
