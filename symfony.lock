@@ -1,4 +1,7 @@
 {
+    "behat/transliterator": {
+        "version": "v1.3.0"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -93,6 +96,9 @@
     "fzaninotto/faker": {
         "version": "v1.9.1"
     },
+    "gedmo/doctrine-extensions": {
+        "version": "v2.4.39"
+    },
     "hautelook/alice-bundle": {
         "version": "2.1",
         "recipe": {
@@ -147,6 +153,9 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/link": {
+        "version": "1.0.0"
+    },
     "psr/log": {
         "version": "1.1.2"
     },
@@ -172,6 +181,30 @@
         },
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
+        ]
+    },
+    "stof/doctrine-extensions-bundle": {
+        "version": "1.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.2",
+            "ref": "6c1ceb662f8997085f739cd089bfbef67f245983"
+        },
+        "files": [
+            "./config/packages/stof_doctrine_extensions.yaml"
+        ]
+    },
+    "symfony/apache-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "410b9325a37ef86f1e47262c61738f6202202bca"
+        },
+        "files": [
+            "./public/.htaccess"
         ]
     },
     "symfony/cache": {
@@ -370,6 +403,9 @@
     },
     "symfony/var-exporter": {
         "version": "v4.4.4"
+    },
+    "symfony/web-link": {
+        "version": "v4.4.5"
     },
     "symfony/web-server-bundle": {
         "version": "3.3",

@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity
@@ -41,6 +42,7 @@ class Buffy
 
     /**
      *@ORM\Column(type="string", length=32  ,  unique=true)
+     * @Gedmo\Slug(fields={"name"})
      */
     private $slug;
     /**

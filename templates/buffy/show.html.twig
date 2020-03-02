@@ -20,12 +20,11 @@
                 <td>{{ buffy.quote }}</td>
             </tr>
             <tr>
-                <th>Quote</th>
-                <td>papapap</td>
+                <th>Slug</th>
+                <td>{{ buffy.slug }}</td>
             </tr>
         </tbody>
     </table>
-
 
     <table class="table">
         <tbody>
@@ -47,9 +46,8 @@
 
     <a href="{{ path('buffy_edit', {'id': buffy.id}) }}">edit</a>
 
-      <a href="{{ path('comida_preferidad_index') }}">comida_preferidas</a>
-
     {{ include('buffy/_delete_form.html.twig') }}
 
-    
+     <a href="{{ path('comida_preferidad_index') }}">comida_preferidas</a>
+     
 {% endblock %}
