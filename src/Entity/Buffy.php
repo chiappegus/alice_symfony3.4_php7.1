@@ -38,6 +38,31 @@ class Buffy
      */
     private $platosDeComidas;
 
+
+    /**
+     *@ORM\Column(type="string", length=32  ,  unique=true)
+     */
+    private $slug;
+    /**
+    * Get slug
+    * @return  
+    */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+    
+    /**
+    * Set slug
+    * @return $this
+    */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+        return $this;
+    }
+
+
     public function __toString()
     {
         return (string) $this->id;
