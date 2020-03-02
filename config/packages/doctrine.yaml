@@ -18,7 +18,7 @@ doctrine:
                 alias: App
 
 stof_doctrine_extensions:
-    default_locale: en_US
+    default_locale: es_ES
     orm:
         default:
             sluggable: true
