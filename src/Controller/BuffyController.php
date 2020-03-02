@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Buffy;
 use App\Form\BuffyType;
+use App\Repository\BuffyRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,14 +18,10 @@ class BuffyController extends AbstractController
     /**
      * @Route("/", name="buffy_index", methods={"GET"})
      */
-    public function index(): Response
+    public function index(BuffyRepository $buffyRepository): Response
     {
-        $buffies = $this->getDoctrine()
-            ->getRepository(Buffy::class)
-            ->findAll();
-
         return $this->render('buffy/index.html.twig', [
-            'buffies' => $buffies,
+            'buffies' => $buffyRepository->findAll(),
         ]);
     }
 

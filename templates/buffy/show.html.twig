@@ -19,12 +19,37 @@
                 <th>Quote</th>
                 <td>{{ buffy.quote }}</td>
             </tr>
+            <tr>
+                <th>Quote</th>
+                <td>papapap</td>
+            </tr>
         </tbody>
+    </table>
+
+
+    <table class="table">
+        <tbody>
+               
+            {%for nc in buffy.ComidasPreferidas%}
+            <tr>
+             <th>Id</th>
+             <td>{{ nc.id }}</td>
+              </tr>
+              <tr>
+             <th>nombre</th>
+             <td>{{ nc.nombre }}</td>
+            </tr>
+            {%endfor%}
+         </tbody>
     </table>
 
     <a href="{{ path('buffy_index') }}">back to list</a>
 
     <a href="{{ path('buffy_edit', {'id': buffy.id}) }}">edit</a>
 
+      <a href="{{ path('comida_preferidad_index') }}">comida_preferidas</a>
+
     {{ include('buffy/_delete_form.html.twig') }}
+
+    
 {% endblock %}
