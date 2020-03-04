@@ -26,7 +26,7 @@
         </tbody>
     </table>
 
-     <table class="table">
+    <table class="table">
         <tbody>
                
             {%for nc in buffy.ComidasPreferidas%}
@@ -48,6 +48,6 @@
 
     {{ include('buffy/_delete_form.html.twig') }}
 
-    <a href="{{ path('comida_preferidad_index') }}">comida_preferidas</a>
-
+     <a href="{{ path('comida_preferidad_index') }}">comida_preferidas</a>
+     
 {% endblock %}

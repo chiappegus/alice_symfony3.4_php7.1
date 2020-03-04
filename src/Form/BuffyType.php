@@ -14,7 +14,8 @@ class BuffyType extends AbstractType
         $builder
             ->add('name')
             ->add('quote')
-            //->add('slug')
+            ->add('slug')
+            ->add('pepe')
         ;
     }
 

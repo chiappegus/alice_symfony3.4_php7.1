@@ -45,6 +45,12 @@ class Buffy
      * @Gedmo\Slug(fields={"name"})
      */
     private $slug;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\ComidaPreferidad", inversedBy="pepe")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $pepe;
     /**
     * Get slug
     * @return  
@@ -174,6 +180,18 @@ class Buffy
                 $platosDeComida->setComida(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getPepe(): ?ComidaPreferidad
+    {
+        return $this->pepe;
+    }
+
+    public function setPepe(?ComidaPreferidad $pepe): self
+    {
+        $this->pepe = $pepe;
 
         return $this;
     }
